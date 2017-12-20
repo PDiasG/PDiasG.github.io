@@ -163,7 +163,7 @@ label::before {
 }
 
 #toggle:checked ~ #expand {
-	height: 730px;
+	height: 840px;
 }
 
 #toggle:checked ~ label::before {
@@ -316,7 +316,7 @@ label::before {
     content: 'Java';
     display: block;
     background: #efefef;
-    width: 65%;
+    width: 80%;
     height: 100%;
 	text-align: center;
 	color: #000000;

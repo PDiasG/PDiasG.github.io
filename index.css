@@ -120,134 +120,54 @@ img.p1 {
 	background-color: white;
 }
 
-input {
-	display: none;
-	visibility: hidden;
-}
-
-label {
-	display: block;
-	font-weight: bold;
-	padding: 5px 5px 5px 5px;
-	text-align: center;
-	color: #efefef;
-}
-
-label:hover {
-	text-decoration: underline;
-}
-
-label::before {
-	font-weight: bold;
-	font-size: 15px;
-	color: #000000;
-	content: "+";
-	vertical-align: text-top;
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin-right: 3px;
-	background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
-}
-
 #expand {
-	height: 0px;
 	overflow: hidden;
 	transition: height 0.5s;
-	size: 80%;
 	color: #efefef;
 	background: #969696;
 	width: 80%;
 	margin: 0 auto;
 	border-bottom: 1px solid #CCC;
-}
-
-#toggle:checked ~ #expand {
-	height: 840px;
-}
-
-#toggle:checked ~ label::before {
-	content: "-";
 }
 
 #expand1 {
-	height: 0px;
 	overflow: hidden;
 	transition: height 0.5s;
-	size: 80%;
 	color: #efefef;
 	background: #969696;
 	width: 80%;
 	margin: 0 auto;
 	border-bottom: 1px solid #CCC;
-}
-
-#toggle1:checked ~ #expand1 {
-	height: 680px;
-}
-
-#toggle1:checked ~ label::before {
-	content: "-";
 }
 
 #expand2 {
-	height: 0px;
 	overflow: hidden;
 	transition: height 0.5s;
-	size: 80%;
 	color: #efefef;
 	background: #969696;
 	width: 80%;
 	margin: 0 auto;
 	border-bottom: 1px solid #CCC;
-}
-
-#toggle2:checked ~ #expand2 {
-	height: 480px;
-}
-
-#toggle2:checked ~ label::before {
-	content: "-";
 }
 
 #expand3 {
-	height: 0px;
 	overflow: hidden;
 	transition: height 0.5s;
-	size: 80%;
 	color: #efefef;
 	background: #969696;
 	width: 80%;
 	margin: 0 auto;
 	border-bottom: 1px solid #CCC;
-}
-
-#toggle3:checked ~ #expand3 {
-	height: 280px;
-}
-
-#toggle3:checked ~ label::before {
-	content: "-";
 }
 
 #expand4 {
-	height: 0px;
 	overflow: hidden;
 	transition: height 0.5s;
-	size: 80%;
 	color: #efefef;
 	background: #969696;
 	width: 80%;
 	margin: 0 auto;
 	border-bottom: 1px solid #CCC;
-}
-
-#toggle4:checked ~ #expand4 {
-	height: 160px;
-}
-
-#toggle4:checked ~ label::before {
-	content: "-";
 }
 
 #progressC {

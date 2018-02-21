@@ -12,6 +12,18 @@
 </head>
 
 <body>
+	<script language="javascript" type="text/javascript">
+		function showDiv()
+		{
+			document.getElementById("expand").style.display=(document.academic.firstpara.checked) ? "block" : "none";
+			document.getElementById("expand1").style.display=(document.proglang.secondpara.checked) ? "block" : "none";
+			document.getElementById("expand2").style.display=(document.activities.thirdpara.checked) ? "block" : "none";
+			document.getElementById("expand3").style.display=(document.work.fourthpara.checked) ? "block" : "none";
+			document.getElementById("expand4").style.display=(document.languages.fifthpara.checked) ? "block" : "none";
+			return true;
+		}
+	</script>
+	
 	<h1 id="main">
 		Pedro Dias Garcia
 	</h1>
@@ -27,10 +39,12 @@
 	<p class="info">
 		You can download my resume <a href="resume.pdf" target="_blank" id="link">here</a>, or you can just check the virtual version:
 	</p>
+	
 	<!-- Academic History -->
-	<input id="toggle" type="checkbox" nchecked>
-	<label for="toggle">Academic History</label>
-	<div id="expand">
+	<form name="academic">
+		<p style=" position: relative;"><input type="checkbox" name="firstpara" onClick="showDiv();" style="position: absolute; width: 100%; height: 100%; opacity: 0;"/> <span style="display: block; font-weight: bold; padding: 5px 5px 5px 5px; text-align: center; color: #efefef;">Academic History</span> </p>
+	</form>	
+	<div id="expand"  style="display:none;">
 		<p class="cvinfo">
 		<!-- Purdue -->
 		<span style="font-weight:bold; font-size:26px;"><a href="https://www.purdue.edu/" target="_blank" id="link">Purdue University</a></span>
@@ -42,23 +56,8 @@
 		Minor in Economics
 		</p>
 		<p class="cvinfo">
-		Completed Coursework - Fall 2017
-		<p/>
-		<p class="cvinfo">
-		CS 18000 - Problem Solving And Object-Oriented Programming<span style="float:right; padding-right: 550px;">A</span><br/>
-		CS 19100 - Freshman Resources Seminar<span style="float:right; padding-right: 550px;">P</span><br/>
-		CS 19300 - Tools<span style="float:right; padding-right: 550px;">A</span><br/>
-		MA 16100 - Plane Analytic Geometry And Calculus I<span style="float:right; padding-right: 550px;">A+</span><br/>
-		ECON 25100 - Microeconomics<span style="float:right; padding-right: 550px;">A+</span>
-		</p>
-		<p class="cvinfo">
-		<span style="float:right; padding-right: 550px;">Period GPA: 4.0</span><br/>
-		<span style="float:right; padding-right: 550px;">Dean's List & Semester Honors</span><br/>
-		<span style="float:right; padding-right: 550px;">Cumulative GPA: 4.0</span>
-		</p>
-		<p class="cvinfo">
 		Current Coursework - Spring 2018
-		<p/>
+		</p>
 		<p class="cvinfo">
 		CS 18200 - Foundation of Computer Science<br/>
 		CS 24000 - Programming in C<br/>
@@ -66,6 +65,22 @@
 		MA 16200 - Plane Analytic Geometry And Calculus II<br/>
 		ECON 25200 - Macroeconomics
 		</p>
+		<p class="cvinfo">
+		Completed Coursework - Fall 2017
+		</p>
+		<p class="cvinfo">
+		CS 18000 - Problem Solving And Object-Oriented Programming<span style="float:right; padding-right: 350px;">A</span><br/>
+		CS 19100 - Freshman Resources Seminar<span style="float:right; padding-right: 350px;">P</span><br/>
+		CS 19300 - Tools<span style="float:right; padding-right: 350px;">A</span><br/>
+		MA 16100 - Plane Analytic Geometry And Calculus I<span style="float:right; padding-right: 350px;">A+</span><br/>
+		ECON 25100 - Microeconomics<span style="float:right; padding-right: 350px;">A+</span>
+		</p>
+		<p class="cvinfo">
+		<span style="float:right; padding-right: 350px;">Period GPA: 4.0</span><br/>
+		<span style="float:right; padding-right: 350px;">Dean's List & Semester Honors</span><br/>
+		<span style="float:right; padding-right: 350px;">Cumulative GPA: 4.0</span>
+		</p>		
+		<br/>
 		<!-- UFRJ -->
 		<p class="cvinfo">
 		<span style="font-weight:bold; font-size:26px;"><a href="https://ufrj.br/" target="_blank" id="link">Universidade Federal do Rio de Janeiro</a></span>
@@ -74,16 +89,16 @@
 		</p>
 		<p class="cvinfo">
 		Coursework Completed - Spring 2017
-		<p/>
-		<p class="cvinfo">
-		MAE111 - Infinitesimal Calculus I<span style="float:right; padding-right: 550px;">7.0/10.0</span><br/>
-		MAB120 - Computing I<span style="float:right; padding-right: 550px;">10.0/10.0</span><br/>
-		MAB111 - Fundamentals of Digital Computing<span style="float:right; padding-right: 550px;">10.0/10.0</span><br/>
-		MAB624 - Integers and Cryptography<span style="float:right; padding-right: 550px;">8.7/10.0</span><br/>
-		MAB112 - Information Systems<span style="float:right; padding-right: 550px;">9.2/10.0</span>
 		</p>
 		<p class="cvinfo">
-		<span style="float:right; padding-right: 550px;">Cumulative GPA: 8.9/10.0</span>
+		MAE111 - Infinitesimal Calculus I<span style="float:right; padding-right: 350px;">7.0/10.0</span><br/>
+		MAB120 - Computing I<span style="float:right; padding-right: 350px;">10.0/10.0</span><br/>
+		MAB111 - Fundamentals of Digital Computing<span style="float:right; padding-right: 350px;">10.0/10.0</span><br/>
+		MAB624 - Integers and Cryptography<span style="float:right; padding-right: 350px;">8.7/10.0</span><br/>
+		MAB112 - Information Systems<span style="float:right; padding-right: 350px;">9.2/10.0</span>
+		</p>
+		<p class="cvinfo">
+		<span style="float:right; padding-right: 350px;">Cumulative GPA: 8.9/10.0</span>
 		</p>
 		<br>
 		<!-- Santo Inacio -->
@@ -98,9 +113,10 @@
 		</p>
 	</div>
 	<!-- Programming Languages -->
-	<input id="toggle1" type="checkbox" nchecked>
-	<label for="toggle1">Programming Languages and Softwares</label>
-	<div id="expand1">
+	<form name="proglang">
+		<p style=" position: relative;"><input type="checkbox" name="secondpara" onClick="showDiv();" style="position: absolute; width: 100%; height: 100%; opacity: 0;"/> <span style="display: block; font-weight: bold; padding: 5px 5px 5px 5px; text-align: center; color: #efefef;">Programming Languages and Softwares</span> </p>
+	</form>
+	<div id="expand1" style="display:none;">
 		<br/>
 		<div id="progressC"></div>
 		<br/>
@@ -129,9 +145,10 @@
 		<div id="progressAndroidStudio"></div>
 	</div>
 	<!-- Activities -->
-	<input id="toggle2" type="checkbox" nchecked>
-	<label for="toggle2">Activities and Clubs</label>
-	<div id="expand2">
+	<form name="activities">
+		<p style=" position: relative;"><input type="checkbox" name="thirdpara" onClick="showDiv();" style="position: absolute; width: 100%; height: 100%; opacity: 0;"/> <span style="display: block; font-weight: bold; padding: 5px 5px 5px 5px; text-align: center; color: #efefef;">Activities and Clubs</span> </p>
+	</form>
+	<div id="expand2" style="display:none;">
 		<p class="cvinfo">
 			<span style="font-weight:bold; font-size:26px;">Hackathons</span>
 		</p>
@@ -146,22 +163,33 @@
 		<p class="cvinfo">
 			<span style="font-size:22px"><a href="https://www.gobrasa.org/" target="_blank" id="link">BRASA</a> Chapter at Purdue</span> <span style="float:right;">Oct 2017 - Present</span><br/><span style="float:right;">Purdue University</span>
 		</p>
+		<br/>
+		<p class="cvinfo">
+			<span style="font-size:22px">Scope Consulting (Junior Enterprise at Purdue)</span> <span style="float:right;">Nov 2017 - Present</span><br/> 
+			Role: Treasurer<span style="float:right;">Purdue University</span><br/>Foudning Member 
+		</p>
 		<p class="cvinfo">
 			<span style="font-weight:bold; font-size:26px;">General Activities</span>
 		</p>
 		<p class="cvinfo">
-			<span style="font-size:22px">Intramural Soccer</span> <span style="float:right;">Fall 2017</span><br/><span style="float:right;">Purdue University</span>
+			<span style="font-size:22px">Intramural Soccer</span> <span style="float:right;">Fall 2017</span><br/>Role: Team Captain<span style="float:right;">Purdue University</span>
 			<br/>
-			Role: Team Captain
 		</p>
 		<p class="cvinfo">
 			<span style="font-size:22px">ONU Colegial (Model UN)</span> <span style="float:right;">2013 - 2016</span><br/><span style="float:right;">Colegio Santo Inacio</span>
 		</p>
 	</div>
 	<!-- Work & Service -->
-	<input id="toggle3" type="checkbox" nchecked>
-	<label for="toggle3">Work and Service</label>
-	<div id="expand3">
+	<form name="work">
+		<p style=" position: relative;"><input type="checkbox" name="fourthpara" onClick="showDiv();" style="position: absolute; width: 100%; height: 100%; opacity: 0;"/> <span style="display: block; font-weight: bold; padding: 5px 5px 5px 5px; text-align: center; color: #efefef;">Work and Service</span> </p>
+	</form>
+	<div id="expand3" style="display:none;">
+	<p class="cvinfo">
+			<span style="font-weight:bold; font-size:26px;">Undergraduate Teacher Assistant</span> <span style="float:right;">Spring 2018</span><br/><span style="float:right;">Purdue University</span>
+			<ul>
+				<li>UTA for CS18000 (Problem Solving and Object-Oriented Programming) at Purdue</li>
+			</ul>
+		</p>
 		<p class="cvinfo">
 			<span style="font-weight:bold; font-size:26px;">Teacher Assistant</span> <span style="float:right;">Mar 2013 - Nov 2015</span><br/><span style="float:right;">Colegio Santo Inacio</span>
 			<ul>
@@ -179,9 +207,10 @@
 		</p>
 	</div>
 	<!-- Spoken Languages -->
-	<input id="toggle4" type="checkbox" nchecked>
-	<label for="toggle4">Spoken Languages</label>
-	<div id="expand4">
+	<form name="languages">
+		<p style=" position: relative;"><input type="checkbox" name="fifthpara" onClick="showDiv();" style="position: absolute; width: 100%; height: 100%; opacity: 0;"/> <span style="display: block; font-weight: bold; padding: 5px 5px 5px 5px; text-align: center; color: #efefef;">Spoken Languages</span> </p>
+	</form>
+	<div id="expand4" style="display:none;">
 		<br/>
 		<div id="progressPortuguese"></div>
 		<br/>
@@ -195,4 +224,4 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 </body>
 
-</html>
+</html>>

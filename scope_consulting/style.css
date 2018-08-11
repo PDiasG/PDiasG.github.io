@@ -200,6 +200,10 @@ h6.major {
 	color: #6c757d;
 }
 
+.card-body {
+	background-color: #F8F9FA;
+}
+
 /* Font Awesome */
 
 .fa-quote-left {
@@ -242,6 +246,7 @@ h6.major {
 	font-size: 100px;
 }
 
+/*Media query*/
 
 @media (max-width: 768px) {
 

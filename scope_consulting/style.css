@@ -91,6 +91,10 @@ body, html {
 	background-size: cover;
 }
 
+.navbar {
+	border-bottom: 1px solid #e5e5e5;
+}
+
 .my-nav-item-active {
 	color: #DEB100 !important;
 	border-top: 4px solid rgba(5, 5, 5, 1);
@@ -120,6 +124,11 @@ h1 {
 	padding-top: 2rem;
 }
 
+h5.display-4 {
+	font-size: 38px;
+	padding-top: 2rem;
+}
+
 .description {
 	max-width: 66%;
 	margin: 0 auto;
@@ -133,12 +142,6 @@ h1 {
 	text-align: center;
 }
 
-.description hr {
-	border-top: 2px solid #b4b4b4;
-	width: 95%;
-	margin-top: .3rem;
-	margin-bottom: 1rem;
-}
 li.nav-footer {
 	display: inline-block;
 	padding: 1rem;
@@ -170,4 +173,86 @@ hr.light {
 	width: 75%;
 	margin-top: .8rem;
 	margin-bottom: 1rem;
+}
+
+.team {
+	max-width: 66%;
+	margin: 0 auto;
+	letter-spacing:0.06rem;
+	line-height: 1.3rem;
+	padding: 3px;
+}
+
+hr.gold {
+	border-top: 2px solid #DEB100;
+	width: 95%;
+	margin-top: .3rem;
+	margin-bottom: 1rem;
+}
+
+.card {
+	margin: 2.5%;
+}
+
+h6.major {
+	font-style: italic;
+	font-size: 14px;
+	color: #6c757d;
+}
+
+/* Font Awesome */
+
+.fa-quote-left {
+	font-size: 24px;
+}
+
+.fa-linkedin {
+	font-size: 36px;
+	color: #0177B5;
+	margin: 2.5px;
+}
+
+.fa-linkedin:hover {
+	color: #d5d5d5;
+}
+
+.fa-envelope {
+	font-size: 36px;
+	color: black;
+	margin: 2.5px;
+}
+
+.fa-envelope:hover {
+	color: #d5d5d5;
+}
+
+.fa-chart-line {
+	font-size: 100px;
+}
+
+.fa-cogs {
+	font-size: 100px;
+}
+
+.fa-lightbulb {
+	font-size: 100px;
+}
+
+.fa-handshake {
+	font-size: 100px;
+}
+
+
+@media (max-width: 768px) {
+
+    .hide-sm{display:none;}
+    .show-sm{display:block;}
+
+}
+
+@media (min-width: 768px) {
+
+    .hide-sm{display:block;}
+    .show-sm{display:none;}
+
 }

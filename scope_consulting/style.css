@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+/*--- Style --*/
+
+body, html {
+	height: 100%;
+	margin: 0px;
+}
+
+.bg {
+	/* The image used */
+	background-image: url("facebook_cover.svg");
+
+	/* Full height */
+	height: 100%;
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.my-nav-item-active {
+	color: #DEB100 !important;
+	border-top: 4px solid rgba(5, 5, 5, 1);
+	margin-top: 0px;
+}
+
+.my-nav-item {
+	border-top: 2px solid rgba(5, 5, 5, 1);
+	padding-top: 10px;
+}
+
+.nav-link {
+	font-weight: bold;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+[class*="col-"] {
+    padding: 0.5rem !important;
+}
+
+h1 {
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+	padding-top: 2rem;
+}
+
+.description {
+	max-width: 66%;
+	margin: 0 auto;
+	letter-spacing:0.06rem;
+	line-height: 1.3rem;
+	padding: 3px;
+}
+
+.description p {
+	font-style: italic;
+	text-align: center;
+}
+
+.description hr {
+	border-top: 2px solid #b4b4b4;
+	width: 95%;
+	margin-top: .3rem;
+	margin-bottom: 1rem;
+}
+li.nav-footer {
+	display: inline-block;
+	padding: 1rem;
+	text-align: center;
+}
+
+a.nav-footer {
+	color: #d5d5d5;
+}
+
+a.nav-footer-active {
+	color: #DEB100;
+	text-decoration: underline;
+}
+
+a.nav-footer:hover {
+	color: #DEB100;
+}
+
+footer {
+	background-color: black;
+	color: #d5d5d5;
+	padding-top: 1rem;
+	margin-top: 1rem;
+}
+
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}

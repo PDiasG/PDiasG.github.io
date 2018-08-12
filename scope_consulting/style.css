@@ -106,6 +106,10 @@ body, html {
 	padding-top: 10px;
 }
 
+.my-nav-item:hover {	
+	color: #DEB100 !important;
+}
+
 .nav-link {
 	font-weight: bold;
 	margin-left: 3px;
@@ -194,6 +198,10 @@ hr.gold {
 	margin: 2.5%;
 }
 
+img.card-img-top {
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
 h6.major {
 	font-style: italic;
 	font-size: 14px;
@@ -202,6 +210,22 @@ h6.major {
 
 .card-body {
 	background-color: #F8F9FA;
+}
+
+.contact {
+	max-width: 80%;
+	margin: 0 auto;
+	letter-spacing:0.06rem;
+	line-height: 1.3rem;
+	padding: 3px;
+}
+
+.link {
+	color: #212529;
+}
+
+.link:hover {
+	color: #DEB100;
 }
 
 /* Font Awesome */
@@ -213,7 +237,7 @@ h6.major {
 .fa-linkedin {
 	font-size: 36px;
 	color: #0177B5;
-	margin: 2.5px;
+	margin-right: 5px;
 }
 
 .fa-linkedin:hover {
@@ -223,7 +247,7 @@ h6.major {
 .fa-envelope {
 	font-size: 36px;
 	color: black;
-	margin: 2.5px;
+	margin-left: 5px;
 }
 
 .fa-envelope:hover {
@@ -246,6 +270,31 @@ h6.major {
 	font-size: 100px;
 }
 
+.fa-map {
+	font-size: 30px;
+}
+
+.fa-phone-square {
+	font-size: 30px;
+}
+
+.fa-envelope {
+	font-size: 30px;
+}
+
+.fa-link {
+	font-size: 30px;
+}
+
+.fa-facebook {
+	color: #4267B2;
+	font-size: 40px;
+}
+
+.fa-facebook:hover {
+	color: #d5d5d5;
+}
+
 /*Media query*/
 
 @media (max-width: 768px) {
@@ -260,4 +309,38 @@ h6.major {
     .hide-sm{display:block;}
     .show-sm{display:none;}
 
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #E5C007;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #DEB100;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }

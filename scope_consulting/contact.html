@@ -15,7 +15,6 @@
 <body>
 
 <!-- Navigation -->
-<!--
 <nav class="navbar navbar-expand-md navbar-light bg-light" style="padding: 0px;">
 <div class="container-fluid">
 	<a class="navbar-brand" href="#"></a>
@@ -24,48 +23,63 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link my-nav-item-active" href="#">HOME</a>
+			<li class="nav-item">
+				<a class="nav-link my-nav-item" href="home.html">HOME</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link my-nav-item" href="#">ABOUT</a>
+				<a class="nav-link my-nav-item" href="about.html">ABOUT</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link my-nav-item" href="#">CONTACT</a>
+				<a class="nav-link my-nav-item-active" href="#">CONTACT</a>
 			</li>
 		</ul>
 	</div>
 </div>
 </nav>
--->
-<!--- Background Image -->
-<div class="bg"></div>
 
-<!--- Welcome Section -->
+<!--- Contact Info. -->
 <div class="container-fluid">
-<div class="row description text-center">
-	<div class="col-12">
-		<h5 class="display-4">About Us</h5>
+<div class="row contact text-center d-flex align-items-center">
+	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+		<h5 class="display-4">Contact Info.</h5>
+		<hr class="gold">
+		<i class="fas fa-map"></i>
+		<p>Scope Consulting<br>
+		Purdue University<br>
+		West Lafayette, IN 47907</p>
+		<i class="fas fa-phone-square"></i>
+		<p>(765) 701-8202<br>
+		Atur Carrilho <small class="text-muted">(President)</small></p>
+		<i class="fas fa-envelope" onMouseOver="this.style.color='black'"></i>
+		<p><a href="mailto:scopeje@purdue.edu" class="link">scopeje@purdue.edu</a></p>
+		<i class="fas fa-link"></i>
+		<p><a href="index.html" class="link">pdiasg.github.io/scope_consulting</a></p>
 	</div>
-	<hr class="gold">
-	<div class="col-12">
-	<p>Scope Consulting is a non-profit organization formed and managed by undergraduate students from Purdue University (West Lafayette, IN). We are affiliated to the Junior Enterprise movement, and our goal is to bring innovations and quality to businesses near us through engineering and software consulting projects, while improving the technical and professional skills of our members.</p>
-	</div>
-	<div class="col-12">
-	<a href="about.html"><button type="button" class="btn btn-outline-secondary btn-md">LEARN MORE</button></a>
-	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+		<div class="card">
+			<div class="card-body">
+				<form action="action_page.php">
+
+					<input type="text" id="fname" name="firstname" placeholder="Name">
+					<input type="email" id="email" name="email" placeholder="Email">					
+					<textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	
+  </div>
+</div>
 </div>
 
-<div class="row description text-center">
+<div class="container-fluid">
+<div class="row contact text-center">
 	<div class="col-12">
-		<h5 class="display-4">The Junior Enterprise Movement</h5>
-	</div>
-	<hr class="gold">
-	<div class="col-12">
-	<p>A movement with 30,000 members across two dozen countries, encouraging members to develop an enterpreneur spirit and developing their students professionally and personally.</p>
-	</div>
-	<div class="col-12">
-	<a href="https://www.juniorenterprise.us/" target="_blank"><button type="button" class="btn btn-outline-secondary btn-md">LEARN MORE</button></a>
+		<h5 class="display-4">Connect</h5>
+		<hr class="gold">
+		<a href="https://www.facebook.com/ScopeConsultingJE/" target="_blank"><i class="fab fa-facebook"></i></a>
 	</div>
 </div>
 </div>
@@ -91,13 +105,13 @@
 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center">
 		<ul>
 			<li class="nav-footer">
-				<a class="nav-footer-active" href="#">HOME</a>
+				<a class="nav-footer" href="index.html">HOME</a>
 			</li> |
 			<li class="nav-footer">
 				<a class="nav-footer" href="about.html">ABOUT</a>
 			</li > |
 			<li class="nav-footer">
-				<a class="nav-footer" href="contact.html">CONTACT</a>
+				<a class="nav-footer-active" href="#">CONTACT</a>
 			</li>
 		</ul>
 	</div>

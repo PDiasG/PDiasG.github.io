@@ -287,12 +287,7 @@ h6.major {
 }
 
 .fa-facebook {
-	color: #4267B2;
-	font-size: 40px;
-}
-
-.fa-facebook:hover {
-	color: #d5d5d5;
+	font-size: 30px;
 }
 
 /*Media query*/

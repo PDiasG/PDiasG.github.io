@@ -99,6 +99,10 @@ h1.animated{
 	font-family: 'PT Serif', san-serif;
 }
 
+.btn-link {
+	color:#010101;
+}
+
 .maintext {
 	margin: 0 4em 0 4em;
 }

@@ -11,6 +11,26 @@
   
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lua:before {
+  content: "\e900";
+  color: #2c2d72;
+}
+
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
@@ -152,4 +172,17 @@ a.link:hover{
 
 .fa-download:hover {
 	color: #424242;
+}
+
+.fa-link {
+	font-size: 40px;
+	color: #c4c4c4;
+}
+
+.fa-link:hover {
+	color: #424242;
+}
+.icon-lua:before {
+  content: "\e900";
+  color: #2c2d72;
 }

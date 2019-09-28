@@ -19,6 +19,9 @@
 
 <body>
 
+	<script  type="text/javascript"  src="filter.js">
+	</script>
+
 	<h1 id="main">
 		Pedro Dias Garcia
 	</h1>
@@ -50,10 +53,24 @@
 	</nav>
 	
 	
+	<!-- Control buttons -->
+	<div id="myBtnContainer">
+	  <button type="button" class="btn" onclick="filterSelection('all')"> Show all</button>
+	  <button type="button" class="btn" onclick="filterSelection('school')"> School Projects</button>
+	  <button type="button" class="btn" onclick="filterSelection('games')"> Games</button>
+	  <button type="button" class="btn" onclick="filterSelection('mobile')"> Mobile Dev</button>
+	  <button type="button" class="btn" onclick="filterSelection('web')"> Web Dev</button>
+	</div>
+	
+	
+	<div class="alert alert-info" role="alert">
+		Due to academic integrity policies, most of the school projects are in private or local repos.
+	</div>
+	
 	<div class="container-fluid">
 		<div class="card-deck" style="width:85%; margin: auto">
-		<!-- Encrypt0 -->
-			<div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+			<!-- Encrypt0 -->
+			<div class="col-md-12 col-lg-6 d-flex align-items-stretch filterDiv mobile">
 				<div class="card">
 					<div id ="encrypt0" class="carousel slide" data-ride="carousel">
   						<div class="carousel-inner">
@@ -86,8 +103,40 @@
 					</div>
 				</div>
 			</div>
-		<!-- Breakout -->
-			<div class="col-md-12 col-lg-6  d-flex align-items-stretch">
+			<!-- Twistter -->
+			<div class="col-md-12 col-lg-6 d-flex align-items-stretch filterDiv school web">
+				<div class="card">
+					<div id ="twistter" class="carousel slide" data-ride="carousel">
+  						<div class="carousel-inner">
+   							 <div class="carousel-item active">
+      							<img width="70%" height="50%" style="margin-left: 15%; margin-top: 5%" src="twistter_1.jpeg" alt="First slide">
+   	 						</div>
+    						<div class="carousel-item">
+      							<img width="70%" height="50%" style="margin-left: 15%; margin-top: 5%" src="twistter_0.jpeg" alt="Second slide">
+    						</div>
+							<a class="carousel-control-prev" href="#twistter" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#twistter" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+								<span class="sr-only">Next</span>
+							</a>
+  						</div>
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">Twistter<br><small class="text-muted">Python, Flask, React, AWS</small></h4>
+						<p class="card-text" style="text-align:justify">"Twitter with a Twist". Project that is being developed for CS307 course at Purdue during Fall/2019, using Python, React and general AWS services, such as EC2 and DynamoDB. It is a simple social network based on Twitter. I was assigned the team leader role, leading the four member group and using the scrum methodology to coordinate the development of our final product.</p>
+						<p class="card-text" style="text-align:justify"> <small class="text-muted">Collaboration with</small> <a href="https://github.com/DaniloArantesF" target="_blank" class="link">DaniloArantesF</a> , <a href="https://github.com/Kaushik2910" target="_blank" class="link">Kaushik2910</a>
+						and <a href="https://github.com/Pratyaksh99" target="_blank" class="link">Pratyaksh99</a>;
+						</p>
+					</div>
+					<div class="card-footer d-flex justify-content-center">
+					</div>
+				</div>
+			</div>
+			<!-- Breakout -->
+			<div class="col-md-12 col-lg-6  d-flex align-items-stretch filterDiv school games">
 				<div class="card">
 					<div id ="breakout" class="carousel slide" data-ride="carousel">
   						<div class="carousel-inner">
@@ -118,8 +167,8 @@
 					</div>
 				</div>
 			</div>
-			<!-- Breakout -->
-			<div class="col-md-12 col-lg-6  d-flex align-items-stretch">
+			<!-- Space -->
+			<div class="col-md-12 col-lg-6  d-flex align-items-stretch filterDiv games">
 				<div class="card">
 					<div id ="spacegame" class="carousel slide" data-ride="carousel">
   						<div class="carousel-inner">
@@ -149,11 +198,11 @@
 				</div>
 			</div>
 			<!-- Web Dev -->
-			<div class="col-md-12 col-lg-6  d-flex align-items-stretch">
+			<div class="col-md-12 col-lg-6  d-flex align-items-stretch filterDiv web">
 				<div class="card">
 					<div id ="webdev" class="carousel slide" data-ride="carousel">
   						<div class="carousel-inner">
-   							 <div class="carousel-item active">
+   							<div class="carousel-item active">
       							<img width="80%" height="80%" style="margin-left: 10%; margin-top: 5%" src="webdev_1.PNG" alt="Scope">
    	 						</div>
     						<div class="carousel-item">
@@ -179,8 +228,8 @@
 					</div>
 				</div>
 			</div>
-			<!---->			
-			<div class="col-md-12 col-lg-6  d-flex align-items-stretch">
+			<!-- Chat Server -->			
+			<div class="col-md-12 col-lg-6  d-flex align-items-stretch filterDiv school">
 				<div class="card">
 					<div id ="chat-server" class="carousel slide" data-ride="carousel">
   						<div class="carousel-inner">
@@ -210,6 +259,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>	
 	<hr>

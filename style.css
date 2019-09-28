@@ -154,6 +154,11 @@ a.link:hover{
 	text-decoration: none;
 }
 
+#myBtnContainer {
+	text-align: center;
+	margin: 15px;
+}
+
 
 .fa-github-square {
 	font-size: 40px;
@@ -185,4 +190,34 @@ a.link:hover{
 .icon-lua:before {
   content: "\e900";
   color: #2c2d72;
+}
+
+
+
+.container-fluid {
+  overflow: hidden;
+}
+
+.filterDiv {
+  display: none !important; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block  !important;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #6c757d;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.alert {
+  margin: 0 7%;
 }

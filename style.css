@@ -187,6 +187,16 @@ a.link:hover{
 .webdev-link:hover {
 	color: #424242;
 }
+
+.fa-gamepad {
+	font-size: 40px;
+	color: #c4c4c4;
+}
+
+.fa-gamepad:hover{
+	color: #424242;
+}
+
 .icon-lua:before {
   content: "\e900";
   color: #2c2d72;
